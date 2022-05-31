@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Carnet D'Adresse</title>
+  </head>
+  <body>
+    <!-- HAUT DE PAGE GROS TITRE -->
+    <header>
+      <h1>Carnet D'Adresse Bocal Academy</h1>
+    </header>
+
+    <!-- NOUVELLE SECTION -->
+    <section id="CreateNewContacts">
+      <div class="titleNewContact">
+        <h2>Créer un nouveau contact:</h2>
+
+        <div class="divSelect">
+          <select id="selecteur" name="groupe">
+            <option class="selectGeneral" value="general">Général</option>
+            <option class="selectPro" value="pro">Professionnel</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <form class="form">
+        <div class="1">
+          <label> Nom:</label>
+          <input type="text" name="name" />
+        </div>
+
+        <br />
+
+        <div class="2">
+          <label> Prénom:</label>
+          <input type="text" name="firstName" />
+        </div>
+
+        <br />
+
+        <div class="3">
+          <label> Email:</label>
+          <input type="email" name="email" />
+        </div>
+
+        <br />
+
+        <div class="4">
+          <label> Numéro de téléphone:</label>
+          <input type="tel" name="phoneNumber" />
+        </div>
+
+        <br />
+
+        <div id="afficherPro">
+          <label> Nom de l'entreprise:</label>
+          <input type="text" name="entreprise" />
+        </div>
+
+        <div id="afficherPerso">
+          <label> Exemple perso:</label>
+          <input type="text" name="perso" />
+        </div>
+
+        <br />
+        <br />
+
+        <div class="buttonCreate">
+          <button type="submit">Créer contact</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- NOUVELLE SECTION -->
+    <section id="AfficherContacts">
+      <!-- TITRE SECTION -->
+      <div class="titleAfficherContact">
+        <h2>Contacts:</h2>
+      </div>
+
+      <!-- CONTENEUR DE MES CONTACT A AFFICHER -->
+      <div class="listeContacts"></div>
+    </section>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

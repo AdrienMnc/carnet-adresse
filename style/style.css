@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.titleNewContact {
+  display: flex;
+}
+
+.divSelect {
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.form {
+  display: table-caption;
+}
+
+#afficherPro {
+  display: none;
+}
